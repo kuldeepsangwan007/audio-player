@@ -1,0 +1,47 @@
+/*Stylesheet*/
+
+
+#loader {
+	display: none;
+}
+.loader {
+	width: 100%;
+	height: 50px;
+	position: absolute;
+	text-align:center;
+	margin-top: 250px;
+	background: url('loader.gif') no-repeat;
+	background-position: 50% 50%;
+	display: block !important;
+}
+
+#error {
+	display:none;
+	width: 960px;
+	text-align: left;
+	padding: 10px;
+}
+
+#mobile {
+    display:none;
+    width: 960px;
+    text-align: left;
+    padding: 10px;
+}
+
+.button {
+    width: 64px;
+    height: 64px;
+}
+.playBtn {
+    background-image: url('../images/buttonPlay.png');
+}
+.playBtn:hover {
+    background-image: url('../images/buttonPlayHover.png');
+}
+.pauseBtn {
+    background-image: url('../images/buttonPause.png');
+}
+.pauseBtn:hover {
+    background-image: url('../images/buttonPauseHover.png');
+}

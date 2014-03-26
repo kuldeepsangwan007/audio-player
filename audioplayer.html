@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample implementation of uiowa HTML audio player built with SoundJS</title>
+
+    <link rel="stylesheet" href="single-button/assets/css/style.css"/>
+    
+    <script type="text/javascript">
+
+        //DEFINE PATH TO MP3 HERE. 
+        //load in dynamically from external source
+        var src = "single-button/assets/audio/test.mp3";
+
+    </script>
+
+</head>
+<body onload="init()">
+
+    <!-- preloader -->
+    <div id="loader"></div>
+
+    <!-- the player -->
+    <div id="content" class="content">
+        <div id="player">
+            <div id="playBtn" class="button playBtn"></div>
+        </div>
+    </div>
+
+    <!-- error message if SoundJS is not supported -->
+    <div id="error">
+        <h1>Sorry!</h1>
+        <p>SoundJS is not currently supported in your browser.</p>
+        <p>Please <a href="http://github.com/CreateJS/SoundJS/issues" target="_blank">log a bug</a>
+            with the device and browser you are using.  Thank you.</p>
+    </div>
+
+    <!-- js classes -->
+    <script type="text/javascript" src="single-button/assets/js/createjs/utils/Proxy.js"></script>
+    <script type="text/javascript" src="single-button/assets/js/createjs/utils/IndexOf.js"></script>
+    <script type="text/javascript" src="single-button/assets/js/createjs/utils/definePropertySupported.js"></script>
+    <script type="text/javascript" src="single-button/assets/js/createjs/events/Event.js"></script>
+    <script type="text/javascript" src="single-button/assets/js/createjs/events/EventDispatcher.js"></script>
+    <script type="text/javascript" src="single-button/assets/js/soundjs/Sound.js"></script>
+    <script type="text/javascript" src="single-button/assets/js/soundjs/WebAudioPlugin.js"></script>
+    <script type="text/javascript" src="single-button/assets/js/soundjs/HTMLAudioPlugin.js"></script>    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="single-button/assets/js/player.js"></script>  
+
+</body>
+</html>
